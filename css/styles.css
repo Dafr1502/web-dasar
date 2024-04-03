@@ -1,0 +1,315 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    position: fixed;
+    width: 100%;
+    padding-block: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    background-color: #00B0FF;
+    padding-inline: 1rem;
+}
+  
+header.navbar-container .nav-list {
+    flex: 1;
+}
+  
+header.navbar-container .nav-list ul {
+    padding-left: 1px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+  
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+  
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+  
+header.navbar-container .nav-list li:hover a {
+    background-color: black;
+    color: white;
+}
+
+.About {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px 4rem; 
+}
+
+.about-img {
+    max-width: 40%;
+    order: 3;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.text-content {
+    max-width: 55%; 
+    order: 1; 
+}
+
+.About h1 {
+    color: #00B0FF;
+    order: 3; 
+}
+
+.About p {
+    max-width: 100%; 
+    font-weight: 500;
+}
+
+.Service {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 70px;
+}
+
+.Service .header{
+    color: #00B0FF;
+    position: absolute;
+    top: 0;
+}
+
+h3 {
+    color: #00B0FF;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Tiket, .Booking, .Visa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.Tiket img, .Booking img, .Visa img {
+    width: 300px; 
+    height: auto; 
+}
+
+.Tiket .text, .Booking .text, .Visa .text {
+    text-align: right;
+}
+
+.Tiket h3, .Booking h3, .Visa h3 {
+    margin-bottom: 10px;
+}
+
+.article-wrapper {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.text {
+    flex: 1; 
+    margin-left: 20px; 
+    order: 1; 
+}
+
+.image img {
+    max-width: 100%; 
+    height: auto; 
+    order: 2;
+}
+
+.Contact {
+    display: flex; 
+    max-width: 100%;
+    padding: 45px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center; 
+}
+
+.Contact img {
+    width: 40%; 
+    height: auto; 
+    border-radius: 50%; 
+    margin-left: 20px;
+}
+
+.Contact .contact-info {
+    flex-grow: 1;
+}
+
+.Contact h3 {
+    margin-bottom: 20px;
+}
+
+.Contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Contact li {
+    margin-bottom: 15px;
+}
+
+.Contact span {
+    font-weight: bold;
+    color: #333;
+}
+
+aside {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; 
+    margin: 0 auto; 
+    margin-top: 40px; 
+    margin-bottom: 30px;
+    text-align: center;
+}.Bioda
+
+.biodata h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.biodata img {
+    width: 35%; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+}
+
+.biodata p {
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+.biodata p span {
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00B0FF;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header.navbar-container .nav-list {
+        margin-top: 10px;
+    }
+
+    header.navbar-container .nav-list ul {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    header.navbar-container .nav-list li {
+        margin: 10px 0; 
+    }
+
+    header.navbar-container .nav-list li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .Service,
+    .About,
+    .Contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .Service .header,
+    .About h1,
+    .Contact h3 {
+        order: 2;
+        margin-bottom: 30px;
+    }
+
+    .About h1 {
+        margin-top: 80px;
+    }
+
+    .Service .article-container,
+    .About .text-content,   
+    .Contact .contact-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .Tiket img,
+    .Booking img,
+    .Visa img,
+    .about-img img,
+    .Contact img,
+    .biodata img {
+        width: 100%;
+        max-width: 300px; 
+    }
+
+    .biodata img {
+        width: 100%;
+        max-width: 200px; 
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 10px;  
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
